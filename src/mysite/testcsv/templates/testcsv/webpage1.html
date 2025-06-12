@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vending Machine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            flex: 1 1 auto;
+            margin: 10px;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .orange-fanta { background-color: orange; }
+        .coca-cola { background-color: red; }
+        .ice-lemon-tea { background-color: yellow; color: black; }
+        .green-tea { background-color: green; }
+        .oolong-tea { background-color: #d2b48c; }
+        .mineral-water { background-color: #3165f5; }
+        .milo { background-color: brown; }
+        .sprite { background-color: darkgreen; }
+        .one-hundred-plus { background-color: #c4c4c4; color: black; }
+        .red-bull { background-color: gold; color: black; }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            button {
+                padding: 25px 50px;
+                font-size: 1.8em;
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Quench your thirst, NOW</h1>
+    <img src="images/full.jpg" alt="List of drinks">
+    <form method="post">
+        {% csrf_token %}
+        <p>Select a drink:</p>
+        <div class="button-container">
+            <button type="submit" name="drink" value="1" class="orange-fanta">Orange Fanta: $1.50</button>
+            <button type="submit" name="drink" value="2" class="coca-cola">Coca Cola: $1.20</button>
+            <button type="submit" name="drink" value="3" class="ice-lemon-tea">Ice Lemon Tea: $1.10</button>
+            <button type="submit" name="drink" value="4" class="green-tea">Green Tea: $1.00</button>
+            <button type="submit" name="drink" value="5" class="oolong-tea">Oolong Tea: $1.20</button>
+            <button type="submit" name="drink" value="6" class="mineral-water">Mineral Water: $0.90</button>
+            <button type="submit" name="drink" value="7" class="milo">Milo: $1.10</button>
+            <button type="submit" name="drink" value="8" class="sprite">Sprite: $1.30</button>
+            <button type="submit" name="drink" value="9" class="one-hundred-plus">100 Plus: $1.00</button>
+            <button type="submit" name="drink" value="10" class="red-bull">Red Bull: $1.50</button>
+        </div>
+    </form>
+</body>
+</html>

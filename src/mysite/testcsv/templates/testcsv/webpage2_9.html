@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drink Ordered!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please present this QR code at the vending machine to collect your drink</h1>
+    <h2>You ordered the following: 100 Plus</h2>
+    <img src="qrs/09.png" alt="QR Code">
+    <p><a href="{% url 'update_csv' %}">Go back</a></p>
+</body>
+</html>
