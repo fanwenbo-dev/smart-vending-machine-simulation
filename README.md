@@ -154,8 +154,8 @@ Link to Video : https://youtu.be/A-uYHc7RFuI OR https://drive.google.com/file/d/
 [Back to Top](#table-of-contents)
 **Name** | **Contribution**
 --- | ---
-Angelin | <ul><li>Completed SRS</li><li>Sprint_Planning_Template.xlsx & System_Test_Report_template.xlsx (except on-site req.)</li><li>Alarm.py, TFunctions.py & test_TFunctions.py</li><li>Dockerfile</li><li>Edit ReadMe.md</li><li>Video Editing</li><li>Dockerising
-Kai Yang | <ul><li>Edit SRS - System Architecture & On-site flowchart</li><li>On-site part of Online_Onsite.py & drinks.csv</li><li>test_TFunctions.py : test_online_finddrinkinfo_name()</li><li>System_Test_Report_template.xlsx (on-site) & Manual test</li><li>Take video</li><li>Dockerising
+Angelin | <ul><li>Completed SRS</li><li>Sprint_Planning_Template.xlsx & System_Test_Report_template.xlsx (except on-site req.)</li><li>Alarm.py, TFunctions.py & test_TFunctions.py</li><li>Dockerfile</li>
+Kai Yang | <ul><li>Edit SRS - System Architecture & On-site flowchart</li><li>On-site part of Online_Onsite.py & drinks.csv</li><li>test_TFunctions.py : test_online_finddrinkinfo_name()</li><li>System_Test_Report_template.xlsx (on-site) & Manual test</li><li>Dockerising
 Tristan | <ul><li>Non-functional Codes & inactive.py</li><li>Online_Onsite.py (Putting everyone's code together)
 Wen Bo | <ul><li>Authentication.py</li><li>PyTest for on-site</li><li>Readme
 Kai Weng | <ul><li>Website</li><li>Online part of Online_Onsite.py (Include PiCam) & Main.py</li><li>owed.csv & updt.csv</li><li>Update SRS</li><li>Requirements.txt
